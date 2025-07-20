@@ -1,0 +1,48 @@
+<div class="enterprise-info form-group">
+  <ul class="enterprise-list">
+    <li class="status">
+      <span class="enterprise-label">Status:</span>
+      <span class="enterprise-item"></span>
+    </li>
+    <li class="plan">
+      <span class="enterprise-label">Plan:</span>
+      <span class="enterprise-item premium-plan">Premium</span>
+      <span class="enterprise-item enterprise-plan">Enterprise</span>
+      <span class="enterprise-item enterprise-plus-plan">Enterprise+</span>
+    </li>
+    <li class="quantity">
+      <span class="enterprise-label">Quantity:</span>
+      <span class="enterprise-item"></span>
+    </li>
+    <li class="amount">
+      <span class="enterprise-label">Amount:</span>
+      <span class="enterprise-item"></span>
+    </li>
+    <li class="renew">
+      <span class="enterprise-label">Renew:</span>
+      <span class="enterprise-item"></span>
+    </li>
+    <li class="trial-end">
+      <span class="enterprise-label">Trial Ends:</span>
+      <span class="enterprise-item"></span>
+    </li>
+    <li class="credit">
+      <span class="enterprise-label">Credit:</span>
+      <span class="enterprise-item"></span>
+    </li>
+  </ul>
+  <ul class="enterprise-list">
+    <li class="key-label">
+      <span class="enterprise-label">Account Key:</span>
+    </li>
+    <li class="key">
+      <span class="enterprise-label"></span>
+    </li>
+  </ul>
+</div>
+<div class="enterprise-buttons">
+  <a type="button" class="enterprise-billing btn btn-primary btn-lg" href="<%= portal_url %>" target="_blank">Manage Billing</a>
+  <button type="button" class="enterprise-remove btn btn-warning btn-lg">Remove License</button><br>
+  <a type="button" class="enterprise-premium-buy btn btn-success btn-lg" href="<%= premium_buy_url %>" <%= premium_buy_url ? '' : 'style="display: none"' %>>Subscribe to Premium</a>
+  <a type="button" class="enterprise-enterprise-buy btn btn-success btn-lg" href="<%= enterprise_buy_url %>" <%= enterprise_buy_url ? '' : 'style="display: none"' %>>Subscribe to Enterprise</a>
+</div>
